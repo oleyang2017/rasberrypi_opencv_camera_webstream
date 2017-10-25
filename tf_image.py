@@ -1,7 +1,8 @@
 # coding: utf-8
 import os
 
-classify_path = "/home/pi/Ras/venv/lib/python3.5/site-packages/tensorflow/models/image/imagenet/classify_image.py"
+cwd = os.path.split(os.path.realpath(__file__))[0]
+classify_path = cwd + "/venv/lib/python3.5/site-packages/tensorflow/models/image/imagenet/classify_image.py"
 
 model_path = "tensorflow/model"
 
